@@ -1,7 +1,10 @@
 const express = require('express');
 const app = express();
-const branch = require('branch');
+const branch = require('wakaflaka');
 
-app.get('/branch', branch);
+app.use('/branch', branch);
+app.get('/', (req, res, next) => res.send('This is the last route in the main app.'));
 
-app.get('/', (req, res, next) => res.send("You've reached the last route!"));
+app.listen(3000, () => {
+  console.log(`App listening on port 3000!`);
+});
