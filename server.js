@@ -3,6 +3,7 @@ const app = express();
 const branch = require('wakaflaka');
 const renderer = require('./dist/serverRenderer');
 
+app.use(express.static('dist'));
 app.use('/branch', branch);
 app.get('/', (req, res, next) => {
   const responseText = renderer({ message: 'hello' });

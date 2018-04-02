@@ -5,8 +5,9 @@ module.exports = (content, props) => {
     <head>
     </head>
     <body>
+      ${JSON.stringify(props)}
       <script>window.__data = ${JSON.stringify(props)}</script>
-      <div class="main">${content}</div>
+      <div id="main">${content}</div>
       <script src="bundle.js"></script>
     </body>
     </html>
