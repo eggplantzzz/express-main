@@ -1,6 +1,6 @@
 module.exports = [
   {
-    entry: './index.js',
+    entry: './clientEntry.js',
     output: {
       filename: 'bundle.js'
     },
@@ -24,7 +24,8 @@ module.exports = [
   {
     entry: './serverEntry.js',
     output: {
-      filename: 'serverRenderer.js'
+      filename: 'serverRenderer.js',
+      libraryTarget: 'commonjs2'
     },
     target: 'node',
     module: {

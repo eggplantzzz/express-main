@@ -1,9 +1,10 @@
 import React from 'react';
 
 export const App = (props) => {
+  const { message } = props;
   return(
     <div>
-      This is the app.
+      The message is {message}.
     </div>
   )
 }

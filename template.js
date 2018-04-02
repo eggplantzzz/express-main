@@ -1,11 +1,12 @@
-module.exports = (props) => {
+module.exports = (content, props) => {
   return `
     <!doctype html>
     <html>
     <head>
     </head>
     <body>
-      <div class="main"></div>
+      <script>window.__data = ${JSON.stringify(props)}</script>
+      <div class="main">${content}</div>
       <script src="bundle.js"></script>
     </body>
     </html>
