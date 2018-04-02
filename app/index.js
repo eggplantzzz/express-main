@@ -1,10 +1,10 @@
 import React from 'react';
 
-export const App = (props) => {
+export default (props) => {
   const { message } = props;
   return(
     <div>
-      The message is {message}.
+      The good message for the message to show is {message}.
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
-import { App } from './app';
+import App from './app';
 import template from './template';
 
 module.exports = function (props) {

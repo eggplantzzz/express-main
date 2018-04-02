@@ -15,6 +15,7 @@
     "wakaflaka": "github:eggplantzzz/express-branch#master",
     "webpack": "^4.4.1",
     "webpack-cli": "^2.0.13",
+    "webpack-dev-middleware": "^3.1.0",
     "webpack-hot-middleware": "^2.21.2"
   },
   "devDependencies": {
@@ -23,6 +24,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "react": "^16.3.0",
-    "react-dom": "^16.3.0"
+    "react-dom": "^16.3.0",
+    "webpack-dev-server": "^3.1.1"
   }
 }

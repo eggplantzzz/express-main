@@ -1,8 +1,15 @@
+const webpack = require('webpack');
+
 module.exports = [
   {
-    entry: './clientEntry.js',
+    mode: 'development',
+    entry: [
+      'webpack-hot-middleware/client',
+      './clientEntry.js'
+    ],
     output: {
-      filename: 'bundle.js'
+      filename: 'bundle.js',
+      publicPath: 'http://localhost:3000/dist'
     },
     module: {
       rules: [
@@ -16,12 +23,12 @@ module.exports = [
         }
       ]
     },
-    stats: {
-      colors: true
-    },
-    devtool: 'source-map'
+    stats: { colors: true },
+    plugins: [ new webpack.HotModuleReplacementPlugin() ]
   },
+
   {
+    mode: 'development',
     entry: './serverEntry.js',
     output: {
       filename: 'serverRenderer.js',
@@ -34,9 +41,7 @@ module.exports = [
           test: /\.js$/,
           exclude: /node_modules/,
           loader:'babel-loader',
-          options: {
-            presets: [ 'env', 'react' ]
-          },
+          options: { presets: [ 'env', 'react' ] },
         }
       ]
     },
