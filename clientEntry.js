@@ -9,11 +9,12 @@ ReactDOM.hydrate(
   <App message={message} />,
   document.getElementById('main')
 );
+
 if (module.hot) {
   module.hot.accept('./app', () => {
-    const NextApp = require('./app').default;
+    const NewApp = require('./app').default;
     ReactDOM.render(
-      <NextApp message={message} />,
+      <NewApp message={message} />,
       document.getElementById('main')
     );
   })

@@ -62,7 +62,7 @@
 /******/ 	}
 /******/
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a43e141a0502dad2bf96"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "2a943c1e2db4a8d2868c"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -772,7 +772,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = function (props) {\n  var message = props.message;\n\n  return _react2.default.createElement(\n    'div',\n    null,\n    'The good message for theasdfasdfasdf message to show is ',\n    message,\n    '.'\n  );\n};\n\n//# sourceURL=webpack:///./app/index.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nexports.default = function (props) {\n  var message = props.message;\n\n  return _react2.default.createElement(\n    'div',\n    null,\n    'The good message for the message to show is ',\n    message,\n    '.'\n  );\n};\n\n//# sourceURL=webpack:///./app/index.js?");
 
 /***/ }),
 
@@ -784,7 +784,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _app = __webpack_require__(/*! ./app */ \"./app/index.js\");\n\nvar _app2 = _interopRequireDefault(_app);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar messageData = window.__data;\nvar message = messageData.message;\n\n\n_reactDom2.default.hydrate(_react2.default.createElement(_app2.default, { message: message }), document.getElementById('main'));\nif (true) {\n  module.hot.accept(/*! ./app */ \"./app/index.js\", function(__WEBPACK_OUTDATED_DEPENDENCIES__) { (function () {\n    var NextApp = __webpack_require__(/*! ./app */ \"./app/index.js\").default;\n    _reactDom2.default.render(_react2.default.createElement(NextApp, { message: message }), document.getElementById('main'));\n  })(__WEBPACK_OUTDATED_DEPENDENCIES__); });\n}\n\n//# sourceURL=webpack:///./clientEntry.js?");
+eval("\n\nvar _react = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar _react2 = _interopRequireDefault(_react);\n\nvar _reactDom = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar _reactDom2 = _interopRequireDefault(_reactDom);\n\nvar _app = __webpack_require__(/*! ./app */ \"./app/index.js\");\n\nvar _app2 = _interopRequireDefault(_app);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar messageData = window.__data;\nvar message = messageData.message;\n\n\n_reactDom2.default.hydrate(_react2.default.createElement(_app2.default, { message: message }), document.getElementById('main'));\n\nif (true) {\n  module.hot.accept(/*! ./app */ \"./app/index.js\", function(__WEBPACK_OUTDATED_DEPENDENCIES__) { (function () {\n    var NewApp = __webpack_require__(/*! ./app */ \"./app/index.js\").default;\n    _reactDom2.default.render(_react2.default.createElement(NewApp, { message: message }), document.getElementById('main'));\n  })(__WEBPACK_OUTDATED_DEPENDENCIES__); });\n}\n\n//# sourceURL=webpack:///./clientEntry.js?");
 
 /***/ }),
 
